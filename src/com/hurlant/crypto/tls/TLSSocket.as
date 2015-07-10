@@ -129,7 +129,7 @@ package com.hurlant.crypto.tls {
 		private function commitWrite():void {
 			clearTimeout(_writeScheduler);
 			_writeScheduler = 0;
-			if (_ready) {
+			if (_ready && _oStream.length > 0) {
 				_engine.sendApplicationData(_oStream);
 				_oStream.length = 0;
 			}
