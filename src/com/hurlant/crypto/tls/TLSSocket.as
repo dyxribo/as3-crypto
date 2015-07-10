@@ -150,8 +150,8 @@ package com.hurlant.crypto.tls {
 
 		override public function connect(host:String, port:int):void {
 			init(new Socket, _config, host);
+			_socket.addEventListener(Event.CONNECT, function(e:*):void { _engine.start(); } );
 			_socket.connect(host, port);
-			_engine.start();
 		}
 
 		public function releaseSocket() : void {
@@ -376,4 +376,3 @@ package com.hurlant.crypto.tls {
 
 	}
 }
-
