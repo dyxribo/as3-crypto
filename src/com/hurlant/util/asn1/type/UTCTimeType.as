@@ -24,7 +24,7 @@ package com.hurlant.util.asn1.type {
 			var hour:uint = parseInt(str.substr(6,2));
 			var minute:uint = parseInt(str.substr(8,2));
 			// XXX this could be off by up to a day. parse the rest. someday.
-			return new Date(year, month-1, day, hour, minute);
+			return new Date(Date.UTC(year, month-1, day, hour, minute));
 		}
 
 	}
