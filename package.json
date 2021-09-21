@@ -4,7 +4,7 @@
     "url": "https://github.com/j3k0/as3-crypto",
     "docUrl": "https://crypto.hurlant.com",
     "description": " As3 Crypto is a cryptography library written in Actionscript 3 that provides several common algorithms. This version also introduces a TLS engine (TLS is commonly known as SSL).",
-    "sourceUrl": "https://github.com/j3k0/as3-crypto/releases/download/1.4.0/cc.fovea.as3crypto_1.4.0.airpackage",
+    "sourceUrl": "https://github.com/j3k0/as3-crypto/releases/download/v1.4/cc.fovea.as3crypto_1.4.0.airpackage",
     "type": "swc",
     "version":"1.4.0",
     "license": {
